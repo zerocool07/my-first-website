@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first website</title>
+  <style>
+
+
+    .clearfix::after , .clearfix::before{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /*header*/
+    .header{
+      background-color: #666;
+      padding: 80px 0;
+    }
+    h1{
+      font-size: 70px;
+      color: #fff;
+      text-align: center;
+    }
+     /*/header*/
+    
+    
+    /*main*/
+    .sidebar{
+      float: left;
+      width: 20%;
+      background-color: #ccc;
+      padding: 40px 10px 100px 20px; 
+    }
+    .sidebar ul{
+      list-style-type: none;
+    }
+    .sidebar ul li {
+      margin-top: 10px;
+    }
+    .sidebar ul li a{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .sidebar ul li a:hover{
+      text-decoration: underline;
+    }
+    .content{
+      float: right;
+      width: 80%;
+      padding: 22px 10px 10px 20px;
+      background-color: #F1F1F1;
+    } 
+    .content h2{
+      color: orange;
+      font-size: 40px;
+      font-family: "Arial" , sans-serif;
+      margin-bottom: 10px;
+    }
+    .content__text{
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      text-indent: 15px;
+    }
+   /*/main*/
+    
+    /* footer */
+    .footer{
+      background-color: #777;
+      text-align: center;
+      padding: 25px 0;
+    }
+    .footer__content{
+      color: #fff;
+      font-size: 25px; 
+    }
+    /*/footer*/
+  </style>
+</head>
+<body>
+
+  <!--header-->
+  <header class="header">
+    <h1>Cities</h1>
+  </header>
+  <!--/header-->
+  
+  <!--main-->
+  <main class="clearfix">
+    <sidebar class="sidebar">
+      <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </sidebar>
+    <div class="content">
+      <h2>London</h2>
+      <p class="content__text">London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      <p class="content__text">Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div>
+  </main>
+  <!--/main-->
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer__content">Footer</div>
+  </footer>
+  <!--/footer-->
+</body>
+</html>
